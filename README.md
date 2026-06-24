@@ -18,7 +18,6 @@
 
 Ce projet illustre comment containeriser une application web et la connecter à une base de données MongoDB, le tout orchestré avec Docker Compose.
 
-**Ce qui a été réalisé :**
 - Écriture d'un `Dockerfile` pour l'application Node.js (image `node:20-alpine`)
 - Passage des credentials MongoDB via des variables d'environnement Docker
 - Connexion des conteneurs via un réseau Docker (`mongo-network`)
@@ -31,7 +30,6 @@ Ce projet illustre comment containeriser une application web et la connecter à 
 
 This project illustrates how to containerize a web application and connect it to a MongoDB database, all orchestrated with Docker Compose.
 
-**What was done:**
 - Writing a `Dockerfile` for the Node.js application (`node:20-alpine`)
 - Passing MongoDB credentials via Docker environment variables
 - Connecting containers via a Docker network (`mongo-network`)
