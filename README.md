@@ -63,50 +63,6 @@ This project illustrates how to containerize a web application and connect it to
 
 ---
 
-## FR — Démarrage rapide
-
-```bash
-# Option 1 : Docker Compose (recommandé)
-docker-compose up -d
-
-# Option 2 : Docker run manuellement
-docker network create mongo-network
-
-docker run -d -p 27017:27017 \
-  -e MONGO_INITDB_ROOT_USERNAME=admin \
-  -e MONGO_INITDB_ROOT_PASSWORD=password \
-  --net mongo-network --name mongodb mongo
-
-docker run -d -p 3000:3000 \
-  -e MONGO_DB_USERNAME=admin \
-  -e MONGO_DB_PWD=password \
-  --net mongo-network --name my-app \
-  <your-image>
-```
-
-## EN — Quick Start
-
-```bash
-# Option 1: Docker Compose (recommended)
-docker-compose up -d
-
-# Option 2: Manual docker run
-docker network create mongo-network
-
-docker run -d -p 27017:27017 \
-  -e MONGO_INITDB_ROOT_USERNAME=admin \
-  -e MONGO_INITDB_ROOT_PASSWORD=password \
-  --net mongo-network --name mongodb mongo
-
-docker run -d -p 3000:3000 \
-  -e MONGO_DB_USERNAME=admin \
-  -e MONGO_DB_PWD=password \
-  --net mongo-network --name my-app \
-  <your-image>
-```
-
----
-
 ## Project Structure
 
 ```
